@@ -30,9 +30,7 @@
 
 - bottom部分：Interrupt handler，CPU接受中断时会调用它；它并不运行在任何特定进程的context中
 - top部分：用户进程或内核其他部分调用的接口
-- 队列（buffer）：top部分和bottom部分的代码都可以从队列读写数据，它可以将并行运行的设备和
-
-CPU解耦开
+- 队列（buffer）：top部分和bottom部分的代码都可以从队列读写数据，它可以将并行运行的设备和CPU解耦开
 
 
 **memory mapped I/O**
